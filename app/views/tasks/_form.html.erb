@@ -1,0 +1,22 @@
+<%= form_with model: @task do |f| %>
+  <div>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, required: true %>
+  </div>
+
+  <div>
+    <%= f.label :details %><br>
+    <%= f.text_area :details, rows: 4 %>
+  </div>
+
+  <% if @task.persisted? %>
+    <div>
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+    </div>
+  <% end %>
+
+  <div style="margin-top: 12px;">
+    <%= f.submit %>
+  </div>
+<% end %>

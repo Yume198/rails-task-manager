@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe0b5 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+.list-group-item {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(180, 90, 20, 0.2);
+}
+
+.btn-warning {
+  background-color: #f7b267;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #f79d65;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #c8a97e;
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  background-color: #b23e35;
+  color: white;
+}
